@@ -1,7 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Creates matrix that includes a list of four functions
+## which can get/set the data as well as the inverse of
+## data.  The inv is set in the global environment and
+## can be accessed (cached) without recomputing.
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -18,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Return a matrix that is the inverse of 'x'.
+## Accessses cached inverse if available in global
+## environment.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
